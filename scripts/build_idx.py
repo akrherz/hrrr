@@ -17,7 +17,7 @@ def run():
             continue
         os.chdir(dirname)
         for filename in glob.glob("*.grib2"):
-            subprocess.call("wgrib2 -g2clib 0 %s > %s.idx.tmp" % (filename, filename),
+            subprocess.call("wgrib2 %s > %s.idx.tmp" % (filename, filename),
                             shell=True)
             os.rename(filename+".idx.tmp", filename+".idx")
         
