@@ -23,12 +23,21 @@
  "composite" and 1km AGL radar reflectivity product.</li>
  </ul>
  
+  <H4>Changes</H4>
+  <ul>
+   <li><strong>12 Jul 2013</strong>: Added symlink in the hrrr_reflectivity folder
+   pointing to the latest reflectivity file.  This link updates once per hour.</li>
+  </ul>
  
  <H4>Frequently asked questions</H4>
  
  <p><strong>How frequently does the data update?</strong><br />
  The data files are streamed one grib message at a time via LDM, with the various
  files on the website built on-the-fly.
+ 
+ <H4>Questions/Comments?</H4>
+ 
+<p><a href="mailto:akrherz@iastate.edu">daryl herzmann</a> akrherz@iastate.edu
  
  </div>
  </body>

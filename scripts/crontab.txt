@@ -1,0 +1,8 @@
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+MAILTO=akrherz@iastate.edu
+
+@reboot bin/ldmadmin stop ; bin/ldmadmin start
+7 7 * * * bin/ldmadmin scour
+
+*/15 * * * * python /local/ldm/hrrr/scripts/build_idx.py >& /dev/null
+20 * * * * python /local/ldm/hrrr/scripts/set_symlink.py
