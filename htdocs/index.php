@@ -21,11 +21,17 @@
  <ul>
  <li><a href="/data/hrrr_reflectivity/">hrrr_reflectivity</a> - 15 minute
  "composite" and 1km AGL radar reflectivity product.</li>
+ <li><a href="/data/hrrr_radiation/">hrrr_radiation</a> - Short wave down at
+ the surface and long wave up at the top of the atmosphere.</li>
  </ul>
  
   <H4>Changes</H4>
   <ul>
-   <li><strong>12 Jul 2013</strong>: Added symlink in the hrrr_reflectivity folder
+   <li><strong>15 Aug 2013</strong>: Add variable subset of shortwave and 
+   longwave radiation.  Your system may not understand these two variables as
+   their grib table usage appears to be very new?  Anyway, look for 193 for 
+   long wave and 192 for short wave within the grib variable parameters.</li>
+  <li><strong>12 Jul 2013</strong>: Added symlink in the hrrr_reflectivity folder
    pointing to the latest reflectivity file.  This link updates once per hour.</li>
   </ul>
  
