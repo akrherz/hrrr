@@ -5,7 +5,7 @@ import datetime
 import os
 import sys
 
-for prefix in ['reflectivity', 'radiation']:
+def do_var(prefix):
     os.chdir("/chinook/ldm/data/hrrr_%s" % (prefix,))
     
     utcnow = datetime.datetime.utcnow()
@@ -16,4 +16,7 @@ for prefix in ['reflectivity', 'radiation']:
             if os.path.isfile("hrrr."+ prefix[:3] +".current.grib2"):
                 os.unlink("hrrr."+ prefix[:3] +".current.grib2")
             os.symlink(fn, "hrrr."+ prefix[:3] +".current.grib2")
-            sys.exit()
+            return
+            
+for prefix in ['reflectivity', 'radiation']:
+    do_var(prefix)
