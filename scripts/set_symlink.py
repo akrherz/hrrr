@@ -18,5 +18,5 @@ def do_var(prefix):
             os.symlink(fn, "hrrr."+ prefix[:3] +".current.grib2")
             return
             
-for prefix in ['reflectivity', 'radiation']:
+for prefix in ['reflectivity', 'radiation', 'surface']:
     do_var(prefix)
