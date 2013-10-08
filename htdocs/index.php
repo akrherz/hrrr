@@ -24,14 +24,13 @@
  <li><a href="/data/hrrr_radiation/">hrrr_radiation</a> - Long wave up at the 
  top of the atmosphere.</li>
  <li><a href="/data/hrrr_surface/">hrrr_surface</a> - Temperature and
- Dew Point at 2 meters above ground level.</li>
+ Dew Point at 2 meters above ground level, u and v winds at 10 meters</li>
  </ul>
  
   <H4>Changes</H4>
   <ul>
    <li><strong>8 Oct 2013</strong>: Added new variable subset of select near
-   surface fields.  Currently only temperature and dew point are included,
-   but I am hoping to find the 10m u and v component winds.</li>
+   surface fields.</li>
    <li><strong>15 Aug 2013</strong>: Add variable subset of  
    longwave radiation.  Your system may not understand this variable as
    their grib table usage appears to be very new?  Anyway, look for 193 for 
