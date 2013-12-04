@@ -20,7 +20,8 @@
  in the directory and are described as:<br />
  <ul>
  <li><a href="/data/hrrr_reflectivity/">hrrr_reflectivity</a> - 15 minute
- "composite" and 1km AGL radar reflectivity product.</li>
+ "composite" and 1km AGL radar reflectivity product.  Also includes categorical
+ precip type fields.</li>
  <li><a href="/data/hrrr_radiation/">hrrr_radiation</a> - Long wave up at the 
  top of the atmosphere.</li>
  <li><a href="/data/hrrr_surface/">hrrr_surface</a> - Temperature and
@@ -29,7 +30,9 @@
  
   <H4>Changes</H4>
   <ul>
-   <li><strong>8 Oct 2013</strong>: Added new variable subset of select near
+   <li><strong>4 Dec 2013</strong>: Added categorical (1 or 0) precip type to
+   the reflectivity subset file.</li>
+  <li><strong>8 Oct 2013</strong>: Added new variable subset of select near
    surface fields.</li>
    <li><strong>15 Aug 2013</strong>: Add variable subset of  
    longwave radiation.  Your system may not understand this variable as
