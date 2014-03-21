@@ -10,7 +10,7 @@ def run():
     """ Do something """
     os.chdir("/chinook/ldm/data/hrrr")
     utc = datetime.datetime.utcnow()
-    for hr in range(4):
+    for hr in range(12):
         now = utc - datetime.timedelta(hours=hr)
         dirname = now.strftime("%Y%m%d%H00")
         if not os.path.isdir(dirname):
