@@ -17,6 +17,11 @@ def run():
             continue
         os.chdir(dirname)
         for filename in glob.glob("*.grib2"):
+            if os.path.isfile("%s.idx" % (filename,)):
+                # Compare timestamps to see if it is necessary to process
+                if os.path.getmtime(filename) < os.path.getmtime("%s.idx" % (
+                                                            filename,)):
+                    continue
             subprocess.call("wgrib2 %s > %s.idx.tmp" % (filename, filename),
                             shell=True)
             os.rename(filename+".idx.tmp", filename+".idx")
