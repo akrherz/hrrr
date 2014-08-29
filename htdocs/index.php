@@ -43,6 +43,13 @@
   </ul>
  
  <H4>Frequently asked questions</H4>
+
+  <p><strong>What will happen to this site when NCEP makes HRRR Operational?</strong><br />
+ On 30 September, NCEP is scheduled to make HRRR operational there.  It would appear
+ that ESRL will continue to run their own version of HRRR.  My current intention
+ is to stop this service once NCEP is up and running.  The reason being to stop 
+ confusion with which version of the HRRR this dataset is.  Also, I don't really
+ see the point of supporting this service once NCEP is in production mode.  
  
  <p><strong>How frequently does the data update?</strong><br />
  The data files are streamed one grib message at a time via LDM, with the various
